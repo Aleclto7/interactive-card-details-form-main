@@ -3,43 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
 </head>
 <body>
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+<main class="main">
+  <section class="section__main">
+    <div class="card__section">
+      <span class="logo__card"></span>
+      <div class="div__card">
+        <p class="number__card">0000 0000 0000 0000</p>
+        <div>
+          <p class="name__card">JANE APPLESEED</p>
+          <p class="date__card">00/00</p>
+        </div>
+      </div>
+    </div>
 
-  000
+    <div class="card__section">
+      <p class="cvc__card">000</p>
+    </div>
+  </section>
 
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
+  <section class="section__main">
+    <div class="div__section">
+      <form class="form__div">
+        <div class="name__form">
+          <p>Cardholder Name</p>
+          <label for="name"></label>
+          <input type="text" id="name" name="name">
+          <span class="field__error">
+            <p>Error Mesagge</p>
+          </span>
+        </div>
+        <div class="cardNumber__form">
+          <p>Card Number</p>
+          <label for="number"></label>
+          <input type="number" id="number" name="number">
+          <span class="field__error">
+            <p>Error Mesagge</p>
+          </span>
+        </div>
+        <div class="div__form">
+          <div class="date__div">
+            <p>Exp. Date (MM/YY)</p>
+            <label for="month"></label>
+            <input type="number" id="month" name="month">
+            <label for="year"></label>
+            <input type="number" id="year" name="year">
+            <span class="field__error">
+              <p>Error Mesagge</p>
+            </span>
+          </div>
+          <div class="cvc__form">
+            <p>CVC</p>
+            <label for="cvc"></label>
+            <input type="number" id="cvc" name="cvc">
+            <span class="field__error">
+              <p>Error Mesagge</p>
+            </span>
+          </div>
+        </div>
+      </form>
+      <button class="btn">Confirm</button>
+    </div>
+  </section>
+</main>
+  
   <!-- Completed state start -->
 
   Thank you!
   We've added your card details
   Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
