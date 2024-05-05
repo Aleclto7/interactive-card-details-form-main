@@ -94,12 +94,16 @@ letter-spacing: 0.2rem;
 }
 .section__main:nth-child(2) {
     height: 66vh;
-    padding: 7rem 2.5rem 2rem 2.5rem;
+    padding: 7rem 2.5rem 0rem 2.5rem;
 }
 .div__section {
-
+    height: 71%;
 }
 .form__div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-weight: 500;
 }
 .form__div div{
@@ -109,9 +113,9 @@ letter-spacing: 0.2rem;
     width: 100%;
     height: 4.5rem;
     border: var(--Light-grayish-violet) solid 1.3px;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     padding: 0 2rem;
-    color: var(--Light-grayish-violet);
+    color: var(--Very-dark-violet);
     font-size: var(--lg);
     font-weight: 500;
     cursor: pointer;
@@ -162,7 +166,7 @@ letter-spacing: 0.2rem;
 
 }
 .btn {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-family: var(--primary-font);
     width: 100%;
     height: 5rem;
@@ -176,4 +180,16 @@ letter-spacing: 0.2rem;
 }
 .inactive {
     display: none;
+}
+
+/* Pseudoclases */
+.form__div input:focus {
+    outline: none;
+    border: 1.3px solid transparent;
+    border-radius: 10px;
+    border-image-source: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    border-image-slice: 1;
+}
+.form__div input:hover {
+    border-image-source: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
 }
