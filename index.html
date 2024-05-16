@@ -32,7 +32,7 @@
   <!-- Section Card logo end -->
 
   <!-- Section form start -->
-  <section class="section__main inactive">
+  <section class="section__main">
     <div class="div__section">
       <form class="form__div">
         <div class="name__form">
@@ -55,7 +55,7 @@
           <div class="date__div">
             <p>EXP. DATE (MM/YY)</p>
             <label for="month"></label>
-            <input class="mm__div" type="number" id="month" name="month" placeholder="MM">
+            <input class="mm__div" type="number" id="month" name="month" placeholder="MM" min="1" max="12">
             <label for="year"></label>
             <input class="yy__div" type="number" id="year" name="year" placeholder="YY">
             <span class="field__error inactive">
@@ -78,7 +78,7 @@
   <!-- Section form end -->
 
   <!-- Success message start -->
-  <section class="section__main">
+  <section class="section__main inactive">
     <div class="container__section">
       <span class="container__icon"></span>
       <h4>THANK YOU!</h4>
